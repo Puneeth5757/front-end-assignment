@@ -1,0 +1,25 @@
+/* Gallery Section */
+.gallery-section {
+  background-color: #e6e0d1 !important;
+  padding: 50px 0;
+}
+
+.img-container {
+  padding: 30px; /* Adjust padding as needed */
+  opacity: 0; /* Start with images hidden */
+  transform: translateY(30px); /* Start with images moved down */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Animation timing */
+}
+
+/* When the image is visible */
+.img-container.visible {
+  opacity: 1;
+  transform: translateY(0); /* Move the image to its original position */
+}
+
+.img-fluid {
+  max-width: 80%; /* Reduce the size of the image to 80% of the container width */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

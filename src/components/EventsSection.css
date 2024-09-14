@@ -1,0 +1,49 @@
+.events-title {
+  font-family: 'Nerko One', cursive;
+  font-size: 2.5rem;
+}
+
+.events-tabs {
+  margin-top: 20px;
+}
+
+.tab-btn {
+  border: none;
+  color: black;
+  background: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  border-bottom: 3px solid #f39c12;
+}
+
+.tab-btn:hover {
+  color: #f39c12;
+}
+
+.event-details img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.event-details {
+  text-align: left;
+}
+
+.event-details h4 {
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+.event-details p {
+  font-size: 1.1rem;
+}
+
+.event-details .btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+}

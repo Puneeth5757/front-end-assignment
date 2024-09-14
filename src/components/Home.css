@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&family=Great+Vibes&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Full viewport image settings */
+.full-viewport-img {
+  position: relative;
+  width: 100vw;  /* Ensure it takes the full viewport width */
+  height: 100vh; /* Ensure it takes the full viewport height */
+  object-fit: cover; /* Cover the entire viewport while maintaining aspect ratio */
+  object-position: center; /* Center the image within the viewport */
+  
+}
+
+/* Love Story Section */
+.love-story-title, .love-story-text {
+  font-family: 'Pacifico', cursive;
+}
+
+.love-story-text {
+  font-size: 1.1rem; /* Adjust the size as needed */
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.date-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.events-section1 {
+  background-color: #f0f0f0 !important;
+  padding: 50px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.date-header h2, .date-header h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  margin: 0 15px;
+  color: #333;
+}
+
+.event-details {
+  text-align: center;
+}
+
+.img-left, .img-right {
+  width: 100px;
+  height: auto;
+}
+
+/* Countdown styling */
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.countdown-timer div {
+  text-align: center;
+}
+
+.countdown-timer p {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.countdown-timer span {
+  font-size: 18px;
+  color: #555;
+}

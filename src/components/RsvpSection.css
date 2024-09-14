@@ -1,0 +1,163 @@
+.bouquet {
+  width: 100%;
+  max-width: 300px; /* Default size for mobile */
+  height: auto;
+  border: 8px solid black;
+  border-radius: 50%;
+  animation: zoom 6s ease-in-out infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rsvp-section {
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+
+.rsvp-form-container {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-title {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+}
+
+.rsvp-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: #333;
+}
+
+.btn-outline-dark {
+  border: 1px solid #333;
+  color: #333;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.overlay-section {
+  position: relative;
+  background-image: url('gallery2.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay-section .overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically */
+  align-items: center;
+}
+
+.overlay-section .info {
+  max-width: 800px; /* Adjust based on your design */
+  margin-bottom: 2rem; /* Space between info and table */
+}
+
+.overlay-section h1, .overlay-section h2 {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.overlay-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.overlay-section .contact-table {
+  margin-bottom: 2rem; /* Space between table and footer */
+}
+
+.overlay-section .table {
+  margin-bottom: 0;
+}
+
+.overlay-section .table-dark {
+  background-color: rgba(0, 0, 0, 0.32) !important;
+  color: white;
+}
+
+.overlay-section footer {
+  color: white;
+}
+
+/* Adjustments for Laptop and Desktop Views */
+@media (min-width: 768px) {
+  .bouquet {
+    max-width: 400px; /* Increase size for laptop and desktop */
+  }
+
+  .rsvp-form-container {
+    max-width: 80%; /* Adjust width of the form for laptop and desktop */
+    margin: 2rem auto; /* Center the form and adjust top margin */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .rsvp-section {
+    padding: 1rem;
+  }
+
+  .bouquet {
+    width: 100%;
+    max-width: 250px; /* Adjust size for mobile */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .row {
+    flex-direction: column; /* Stack form below image */
+    align-items: center;
+  }
+
+  .col-md-4, .col-md-8 {
+    width: 100%;
+  }
+
+  .rsvp-form-container {
+    margin-top: 1rem; /* Adjust spacing for mobile */
+    max-width: 90%; /* Reduce width of the form */
+  }
+}
