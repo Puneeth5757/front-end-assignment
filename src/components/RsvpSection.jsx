@@ -1,5 +1,6 @@
 // import React from "react";
-import "./RsvpSection.css"; 
+import "./RsvpSection.css";
+
 
 const RsvpSection = () => {
   return (
@@ -7,12 +8,10 @@ const RsvpSection = () => {
       <section id="rsvp" className="rsvp-section mt-5">
         <div className="container position-relative">
           <div className="row">
-            {/* Left floral image */}
             <div className="col-12 col-md-4 d-flex justify-content-center">
               <img src="/bouquet.jpg" alt="bouquet" className="bouquet rounded-circle border border-dark" />
             </div>
 
-            {/* Form content */}
             <div className="col-12 col-md-8 mt-5 mt-md-0">
               <div className="rsvp-form-container p-4 bg-white shadow">
                 <h2 className="rsvp-title">RSVP</h2>
@@ -34,8 +33,9 @@ const RsvpSection = () => {
           </div>
         </div>
       </section>
-      <br />
+
       <section className="overlay-section mt-5">
+        <img src='./gallery2.png' alt="Background" className="background-image" />
         <div className="overlay-content">
           <div className="info">
             <h1>Save the Date</h1>
