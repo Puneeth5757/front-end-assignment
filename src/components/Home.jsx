@@ -71,7 +71,6 @@ const HeroSection = () => {
               className="img-right"
             />
           </div>
-          {/* Countdown Placeholder (If you want to implement later) */}
           <div className="countdown-timer">
             <div>
               <p>-92</p>

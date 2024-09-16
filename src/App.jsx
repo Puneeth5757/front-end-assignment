@@ -8,9 +8,9 @@ import loadingImage from './assets/loading-image.png';
 import "./App.css";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);  //state variable   
 
-  useEffect(() => {
+  useEffect(() => { //handle effects
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 3000);

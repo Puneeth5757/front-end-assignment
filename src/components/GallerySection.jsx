@@ -3,27 +3,23 @@ import './GallerySection.css';
 
 const GallerySection = () => {
   useEffect(() => {
-    // Function to handle intersection
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add('visible'); 
         } else {
           entry.target.classList.remove('visible');
         }
       });
     };
 
-    // Create an intersection observer instance
     const observer = new IntersectionObserver(handleIntersection, {
       threshold: 0.1, // Trigger when 10% of the target is visible
     });
 
-    // Observe all .img-container elements
     const imgContainers = document.querySelectorAll('.img-container');
     imgContainers.forEach((imgContainer) => observer.observe(imgContainer));
 
-    // Cleanup observer on unmount
     return () => {
       imgContainers.forEach((imgContainer) => observer.unobserve(imgContainer));
     };
@@ -31,23 +27,23 @@ const GallerySection = () => {
 
   return (
     <div>
-      {/* Gallery Section */}
+      
       <section id="gallery" className="gallery-section py-5">
         <div className="container mt-5">
           <h2 className="text-center mb-4">Gallery</h2>
           <div className="row">
             <div className="col-md-12 mb-4">
-              <div className="img-container p-4"> {/* Add padding */}
+              <div className="img-container p-4"> 
                 <img src="./gallery3.png" alt="Gallery 1" className="img-fluid transition-img" />
               </div>
             </div>
             <div className="col-md-12 mb-4">
-              <div className="img-container p-4"> {/* Add padding */}
+              <div className="img-container p-4"> 
                 <img src="./gallery2.png" alt="Gallery 2" className="img-fluid transition-img" />
               </div>
             </div>
             <div className="col-md-12 mb-4">
-              <div className="img-container p-4"> {/* Add padding */}
+              <div className="img-container p-4">
                 <img src="./gallery1.png" alt="Gallery 3" className="img-fluid transition-img" />
               </div>
             </div>

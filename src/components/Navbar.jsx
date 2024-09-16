@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
       </section>
 
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
           <a className="navbar-brand" href="#home">
             <img src="./logo.png" alt="Logo" className="navbar-logo" />

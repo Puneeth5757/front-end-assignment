@@ -8,13 +8,11 @@ const EventsSection = () => {
   return (
     <section id="events" className="events-section2 py-5 ">
       <div className="container mt-5">
-        {/* Title and Tabs */}
         <div className="text-center">
           <div>
           <h2 className="events-title">Wedding events</h2>
           <p>Here you can find all the information about our wedding. The schedule of the event and the places</p>
           </div>
-          {/* Tab Navigation */}
           <div className="events-tabs">
             <button 
               className={`tab-btn ${activeTab === "ceremony" ? "active" : ""}`}
@@ -37,10 +35,8 @@ const EventsSection = () => {
           </div>
         </div>
 
-        {/* Event Details - Conditionally Rendered Based on Active Tab */}
         {activeTab === "ceremony" && (
           <div className="row event-details mt-5">
-            {/* Image */}
             <div className="col-md-6">
               <img 
                 src="./gallery1.png" 
@@ -48,7 +44,6 @@ const EventsSection = () => {
                 className="img-fluid"
               />
             </div>
-            {/* Event Info */}
             <div className="col-md-6">
               <h4>When and Where</h4>
               <p><i className="fas fa-map-marker-alt"></i> W Hotel, 1423 Hobart St, Pittsburgh, PA, 15217</p>
@@ -59,7 +54,6 @@ const EventsSection = () => {
           </div>
         )}
 
-        {/* Additional tabs for Dinner and Party */}
         {activeTab === "dinner" && (
           <div className="row event-details mt-5">
             <div className="col-md-6">

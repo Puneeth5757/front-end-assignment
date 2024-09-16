@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&family=Great+Vibes&display=swap');
 
-body, html {
+/* body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-x: hidden; 
   width: 100vw;
   height: 100vh;
-}
+} */
 
 /* Full viewport image settings */
 .full-viewport-img {
   position: relative;
-  width: 100vw;  /* Ensure it takes the full viewport width */
-  height: 100vh; /* Ensure it takes the full viewport height */
-  object-fit: cover; /* Cover the entire viewport while maintaining aspect ratio */
-  object-position: center; /* Center the image within the viewport */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; 
+  object-position: center;
   
 }
 
@@ -24,7 +24,7 @@ body, html {
 }
 
 .love-story-text {
-  font-size: 1.1rem; /* Adjust the size as needed */
+  font-size: 1.1rem; 
   line-height: 1.5;
   text-align: justify;
   margin-bottom: 50px;
